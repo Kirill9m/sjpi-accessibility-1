@@ -38,16 +38,16 @@ a {
 }
 
 .hidden-text-container {
-  margin-top: 0.2rem;
   display: flex;
   flex-direction: column;
-  float: left;
+  justify-content: center;;
+  font-size: 40px;
+  font-weight: bold;
+  align-items: center;
 }
 
 /* Nästan osynlig text, spegelvänd */
 .hidden-text {
-  padding-top: 10px;
-  margin-left: 10px;
   display: block;
   opacity: 1;
   font-size: 35px;
@@ -142,6 +142,7 @@ div {
   display: flex;
   flex-direction: row;
   float: right;
+  width: 100%;
 }
 
 /* Inputfält med röd text och svart ram */
