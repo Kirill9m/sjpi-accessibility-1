@@ -1,21 +1,19 @@
-/* Återställer standardmarginaler/padding och använder border-box för att inkludera padding i elementets storlek */
+
+|/* Återställer standardmarginaler/padding och använder border-box för att inkludera padding i elementets storlek */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Tungläst typsnitt */
+  font-family:'Times New Roman', Times, serif
 }
 
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
 body {
-  background: #6c6c6c;
+  background: #264653;
   color: #f5f5dc;
   font-size: 30px;
   text-align: left;
-  letter-spacing: 5px;
-  word-spacing: 15px;
   line-height: 1.2em;
-  text-shadow: 5px 5px 10px black;
 }
 
 /* Tar bort understrykning på länkar och ändrar färg */
@@ -26,20 +24,23 @@ a {
 
 /* Stilar för en knapp-liknande div, men "not-allowed" cursor gör att den ser inaktiv ut */
 .button {
-  background-color: magenta;
-  color: cyan;
-  font-size: 50px;
-  padding: 20px;
-  border: 5px dashed black;
-  cursor: not-allowed;
+  font-size: 20px;
+  padding: 10px;
   text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+  background-color: #E9C46A;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
 }
 
 /* Nästan osynlig text, spegelvänd */
 .hidden-text {
   display: block;
   opacity: 1;
-  font-size: 50px;
+  font-size: 35px;
   /* transform: rotate(180deg); */
 }
 
@@ -47,17 +48,18 @@ a {
 .container {
   width: 100%;
   margin: auto;
-  border: 10px solid pink;
-  background-color: rgba(0, 0, 255, 0.2);
+  border: 1px solid #E9C46A;
+  background-color: #F4A261;
   text-align: center;
 }
 
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
 .article {
-  border-bottom: 10px dotted orange;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  background: radial-gradient(circle, black, transparent);
+  border-bottom: 1px solid orange;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  background: #E76F51;
+  height: auto;
 }
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
@@ -72,7 +74,7 @@ a {
 
 /* Navigeringsmeny med mörk bakgrund och jämnt fördelade element */
 .navigation {
-  background-color: #3b3b3b;
+  background-color: #2A9D8F;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -109,58 +111,22 @@ a {
 
 /* Input-fält i en container med kolumnlayout och flytande positionering */
 .input-container {
+  margin-top: 0.2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   float: right;
-  width: 50%;
-  background: #ffffff00; /* Genomskinlig bakgrund */
 }
 
 /* Inputfält med röd text och svart ram */
 .input-container input {
-  font-size: 30px;
+  font-size: 1.2rem;
   padding: 20px;
-  text-align: right;
-  border: 5px solid black;
-  background-color: rgb(255, 255, 255);
-  color: red;
+  height: 1rem;
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
-  border: 10px ridge pink;
-  background-color: darkred;
-  color: white;
-  font-size: 40px;
-  padding: 30px;
-  cursor: crosshair;
-  transform: rotate(-10deg);
-}
-
-/* En knapp med blå bakgrund och vit text */
-.button {
-  display: inline-block;
-  padding: 10px;
-  background-color: blue;
-  color: white;
   cursor: pointer;
-}
-
-/* En "fake ad" med blinkande bakgrund och fast position längst ner */
-#fake-ad {
-  position: fixed;
-  bottom: 0;
-  width: 40%;
-  background: repeating-radial-gradient(circle, cyan, magenta 10%, yellow 20%);
-  text-align: center;
-  padding: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
 }
 
 /* Sektion med centrerad layout */
@@ -187,20 +153,7 @@ a {
   padding: 1px;
 }
 
-/* Bild som roterar mellan -45 och 45 grader */
-.rotating-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: rotateLeftRight 2s infinite alternate ease-in-out;
-}
-
-/* Nyckelbildning för att rotera bilden åt vänster och höger */
-@keyframes rotateLeftRight {
-  0% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
+.animations {
+  padding: 1rem;
+  height: 220px;
 }
