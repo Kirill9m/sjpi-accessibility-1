@@ -113,7 +113,7 @@ a {
 .input-container {
   margin-top: 0.2rem;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   float: right;
 }
 
@@ -121,39 +121,26 @@ a {
 .input-container input {
   font-size: 1.2rem;
   padding: 20px;
-  height: 1rem;
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
   cursor: pointer;
-}
-
-/* Sektion med centrerad layout */
-.top-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Text med en hover-effekt som drastiskt krymper storleken */
-.btext {
-  font-size: 18px;
-  padding: 10px 15px;
-  margin-top: 10px;
-  font-weight: bold;
-  transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out,
-    padding 0.5s ease-in-out;
-}
-
-/* På hover minskas texten kraftigt, nästan osynlig */
-.btext:hover {
-  transform: scale(0.1);
-  font-size: 1px;
-  padding: 1px;
+  background-color: #E9C46A;
+  width: 3rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .animations {
   padding: 1rem;
   height: 220px;
+}
+
+.search-icon {
+  background-image: url('images/search.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85%;
 }
