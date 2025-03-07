@@ -51,6 +51,7 @@ a {
 /* En behållare med mittjusterad text och en blå transparent bakgrund */
 .container {
   width: 100%;
+  margin-left: 1rem;
   margin: auto;
   background-color: #E9C46A;
 }
