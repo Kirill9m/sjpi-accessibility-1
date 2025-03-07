@@ -62,10 +62,10 @@ a {
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
 .headline {
-  font-size: 80px;
+  font-size: 3rem;
   font-weight: lighter;
-  color: #8d0801;
-  text-align: right;
+  color: #ffffff;
+  text-align: center;
   margin: 50px;
   padding: 20px;
 }
