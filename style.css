@@ -106,12 +106,14 @@ div {
 .navigation .nav-item a {
   color: #000;
   padding: 10px;
+  margin-right: 20px;
   text-decoration: none;
 }
 
 .navigation .nav-item.active a {
   background-color: #3ca7d12f;
   border-radius: 1rem;
+  transform: scale(5);
   font-weight: bold;
   pointer-events: none;
 }
@@ -119,6 +121,7 @@ div {
 /* Bakgrundsfärg vid hover på navigationslänkar */
 .navigation .nav-item:hover a {
   background-color: #3ca7d12f;
+  border-radius: 1rem;
 }
 
 /* Bilderna placeras i en rad, centrerar dem horisontellt och vertikalt och lägger till ett mellanrum mellan bilderna */
