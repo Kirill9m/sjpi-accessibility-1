@@ -10,7 +10,7 @@
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
 body {
   background: #ebf3f8;
-  font-size: 30px;
+  font-size: 1.2rem;
   text-align: left;
   line-height: 1.2em;
   margin: 0;
@@ -31,32 +31,21 @@ a {
   color: #000;
   cursor: pointer;
   margin-bottom: 1rem;
-  margin:auto;
   padding: 0.6rem;
   border-radius: 5px;
   width: 8rem;
 }
 
-.hidden-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;;
-  font-size: 40px;
-  font-weight: bold;
-  align-items: center;
-}
-
 /* Nästan osynlig text, spegelvänd */
 .hidden-text {
-  display: block;
   opacity: 1;
-  font-size: 35px;
+  font-size: 2rem;
   /* transform: rotate(180deg); */
 }
 
 .hearder-block {
   background-color: #3ca7d12f;
-  height: 20rem;
+  padding: 2rem;
 }
 
 /* En behållare med mittjusterad text och en blå transparent bakgrund */
@@ -69,13 +58,14 @@ a {
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
 .article {
   height: auto;
+  margin-top: 2rem;
 }
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
 .headline {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin: 50px;
+  margin: 1rem;
 }
 
 h1 {
@@ -91,7 +81,7 @@ p {
 .navigation {
   display: flex;
   justify-content: space-between;
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: bold;
   align-items: center;
 }
@@ -106,14 +96,13 @@ div {
 .navigation .nav-item a {
   color: #000;
   padding: 10px;
-  margin-right: 20px;
+  margin-right: 1rem;
   text-decoration: none;
 }
 
 .navigation .nav-item.active a {
   background-color: #3ca7d12f;
   border-radius: 1rem;
-  transform: scale(5);
   font-weight: bold;
   pointer-events: none;
 }
@@ -141,19 +130,20 @@ div {
 
 /* Input-fält i en container med kolumnlayout och flytande positionering */
 .input-container {
-  margin-top: 0.2rem;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   float: right;
   width: 100%;
 }
 
 /* Inputfält med röd text och svart ram */
 .input-container input {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 20px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border: none;
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
@@ -163,6 +153,7 @@ div {
   width: 4rem;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: none;
 }
 
 .animations {
@@ -180,7 +171,7 @@ div {
 }
 
 .article {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .footer-block {
