@@ -29,12 +29,14 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 <!DOCTYPE html>
 <!-- Det påverkar mycket accessibility, dvs skärmläsarna och liknande  -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- Endast en `<title>` används; flera kan orsaka oväntat beteende och påverka SEO samt tillgänglighet negativt. -->
     <title>A11y News</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -87,32 +89,16 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
         <div class="article" style="display: none;">
             <p class="headline">Se en 50MB bild ladda långsamt!</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500" alt="Flower image">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500"
+                alt="Flower image">
         </div>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
         <div class="article">
-            <video autoplay muted loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-            <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif">
+            <video autoplay muted loop controls><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></video>
+            <video autoplay muted loop controls> <source src="images/hi.webm" type="video/webm" /></video>
         </div>
     </div>
-
-    <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
-    <div id="fake-ad">
-        <div class="top-section">
-            <div class="image-container">
-                <img class="rotating-image" src="images/chest.png">
-            </div>
-            <p>🎉 You have won $10,000! 🎉</p>
-            <div class="image-container">
-                <img class="rotating-image" src="images/chest.png">
-            </div>
-        </div>
-        <p class="btext">Click here to collect your money!</p>
-    </div>
-
-
-    <script src="script.js" defer></script>
 </body>
 
 </html>
