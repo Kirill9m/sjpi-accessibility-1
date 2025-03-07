@@ -38,9 +38,9 @@ a {
 /* Nästan osynlig text, spegelvänd */
 .hidden-text {
   display: block;
-  opacity: 0.1;
+  opacity: 1;
   font-size: 50px;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 /* En behållare med mittjusterad text och en blå transparent bakgrund */
