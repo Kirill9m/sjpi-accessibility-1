@@ -148,9 +148,10 @@ div {
   z-index: 10;
   position: absolute;
   top: 10px;
-  right: 5px;
-  width: 45px;
-  height: 45px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #3498db;
   cursor: pointer;
 }
 
