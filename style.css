@@ -118,7 +118,7 @@ div {
 }
 
 .nav-item.active {
-  border-bottom: 5px solid #3ca7d12f;
+  border-bottom: 5px solid #3498db;
   font-weight: bold;
   pointer-events: none;
   cursor: not-allowed;
