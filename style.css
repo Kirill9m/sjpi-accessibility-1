@@ -265,4 +265,9 @@ div {
   .search-input {
     min-width: 100px;
   }
+
+  .animations {
+    height: 200px;
+    max-width: 300px;
+  }
 }
