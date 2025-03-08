@@ -151,6 +151,7 @@ div {
   right: 5px;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 
 /* Definierar storleken på bilderna och gör att de täcker det angivna utrymmet utan att bli förvrängda  */
