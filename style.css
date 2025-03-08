@@ -43,6 +43,14 @@ a {
   /* transform: rotate(180deg); */
 }
 
+.hidden-text-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
 .hearder-block {
   background-color: #3ca7d12f;
   padding: 2rem;
@@ -70,8 +78,15 @@ a {
 }
 
 h1 {
-  padding-left: 2rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center;
+  margin-left: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
 }
 
 p {
@@ -82,6 +97,7 @@ p {
 .navigation {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   font-size: 1.5rem;
   font-weight: bold;
   align-items: center;
@@ -102,15 +118,16 @@ div {
 }
 
 .navigation .nav-item.active a {
-  background-color: #3ca7d12f;
-  border-radius: 1rem;
+  border-bottom: 5px solid #3ca7d12f;
   font-weight: bold;
   pointer-events: none;
+  cursor: not-allowed;
 }
 
 /* Bakgrundsfärg vid hover på navigationslänkar */
 .navigation .nav-item:hover a {
   background-color: #3ca7d12f;
+  border-bottom: 5px solid #3ca7d12f;
   border-radius: 1rem;
 }
 
@@ -127,6 +144,7 @@ div {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 /* Input-fält i en container med kolumnlayout och flytande positionering */
@@ -155,6 +173,7 @@ div {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: none;
+  min-width: 3rem;
 }
 
 .animations {
@@ -177,4 +196,48 @@ div {
 
 .footer-block {
   border-top: 3px solid #000;
+}
+
+.info-text {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .navigation .nav-item.active a {
+    background-color: #3ca7d12f;
+    border-bottom: 0px solid #3ca7d12f;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+  }
+
+  .navigation .nav-item {
+    color: #000;
+    margin-bottom: 1.4rem;
+  }
+
+  .navigation .nav-item:hover a {
+    background-color: 0;
+    border-bottom: 0px;
+    border-radius: 0.2rem;
+  }
 }

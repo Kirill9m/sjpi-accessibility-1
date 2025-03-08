@@ -46,10 +46,10 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
     <nav class="navigation">
         <h1>A11y News</h1>
-        <span class="nav-item active" id="home"><a href="404.html" target="_blank">Home</a></span>
-        <span class="nav-item" id="world"><a href="404.html">World</a></span>
-        <span class="nav-item" id="sport"><a href="404.html">Sports</a></span>
-        <span class="nav-item" id="entertaiment"><a href="404.html" target="_blank">Entertainment</a></span>
+        <span class="nav-item active" id="home"><a>Home</a></span>
+        <span class="nav-item" id="world"><a>World</a></span>
+        <span class="nav-item" id="sport"><a>Sports</a></span>
+        <span class="nav-item" id="entertaiment"><a>Entertainment</a></span>
     </nav>
 
     <!-- Svåråtkomligt inputfällt -->
@@ -61,8 +61,10 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
     <!-- Dold text och klickbar div. 
      .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
+        <div class="hidden-text-container">
         <h3 class="hidden-text" aria-hidden="true">This text is invisible.</h3>
         <div class="button" aria-label="Invisible text">Click here!</div>
+        </div>
     </section>
 
         <div class="article">
@@ -71,7 +73,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
                 biotechnology.</p>
-            <a class="button" href="404.html">Click here!</a>
+            <a class="button">Click here!</a>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
         <div class="article">
