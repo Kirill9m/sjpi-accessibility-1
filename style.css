@@ -198,10 +198,18 @@ div {
 }
 
 .info-text {
-  color: red;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(252, 25, 25, 0.8);
+  padding: 10px;
+  text-align: center;
+  z-index: 100;
 }
 
 @media (max-width: 768px) {

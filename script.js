@@ -1,9 +1,6 @@
 const news = document.querySelector(".image-container");
-const button = document.querySelector(".button");
+const button = document.querySelectorAll(".button");
 const searchButton = document.querySelector(".search-icon");
-const sportButton = document.querySelector("#sport");
-const worldButton = document.querySelector("#world");
-const entertaimentButton = document.querySelector("#entertaiment");
 
 
 function devMsg(elem){
@@ -22,8 +19,6 @@ elem.addEventListener("click", () => {
 }
 
 devMsg(news);
-devMsg(button);
 devMsg(searchButton);
-devMsg(sportButton);
-devMsg(worldButton);
-devMsg(entertaimentButton);
+devMsg(button[0]);
+devMsg(button[1]);
