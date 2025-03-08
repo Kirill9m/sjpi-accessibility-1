@@ -46,10 +46,10 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
     <nav class="navigation">
         <h1>A11y News</h1>
-        <span class="nav-item active" id="home"><a>Home</a></span>
-        <span class="nav-item" id="world"><a>World</a></span>
-        <span class="nav-item" id="sport"><a>Sports</a></span>
-        <span class="nav-item" id="entertaiment"><a>Entertainment</a></span>
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#world" class="nav-item">World</a>
+        <a href="#sport" class="nav-item">Sports</a>
+        <a href="#entertainment" class="nav-item">Entertainment</a>
     </nav>
 
     <!-- Svåråtkomligt inputfällt -->
@@ -63,7 +63,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
      .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
         <div class="hidden-text-container">
         <h3 class="hidden-text" aria-hidden="true">This text is invisible.</h3>
-        <div class="button" aria-label="Invisible text">Click here!</div>
+        <button class="button" aria-label="Invisible text">Click here!</button>
         </div>
     </section>
 
@@ -73,7 +73,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
                 biotechnology.</p>
-            <a class="button">Click here!</a>
+            <button class="button">Click here!</button>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
         <div class="article">
@@ -81,9 +81,9 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
             <!-- Bilder visas inte, varför? -->
             <div class="image-container">
-                <img src="images/ocean.webp" alt="Ocean view image">
-                <img src="images/city.webp" alt="City image">
-                <img src="images/family.webp" alt="Family image">
+                <img src="images/ocean.webp" alt="Ocean view image" tabindex="0" aria-label="Ocean view image, access the news by pressing the images">
+                <img src="images/city.webp" alt="City image" tabindex="0" aria-label="City image, access the news by pressing the images">
+                <img src="images/family.webp" alt="Family image" tabindex="0" aria-label="Family image, access the news by pressing the images">
             </div>
 
             <p>Access the news by pressing the images</p>

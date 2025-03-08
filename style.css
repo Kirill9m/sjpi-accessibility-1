@@ -27,13 +27,14 @@ a {
   font-size: 20px;
   text-transform: uppercase;
   display: inline-block;
-  background-color: #E9C46A;
+  background-color: #3498db;
   color: #000;
   cursor: pointer;
   margin-bottom: 1rem;
   padding: 0.6rem;
   border-radius: 5px;
   width: 8rem;
+  border: none;
 }
 
 /* Nästan osynlig text, spegelvänd */
@@ -61,7 +62,7 @@ a {
   width: 100%;
   margin-left: 1rem;
   margin: auto;
-  background-color: #E9C46A;
+  background-color: #3498db;
 }
 
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
@@ -95,12 +96,12 @@ p {
 
 /* Navigeringsmeny med mörk bakgrund och jämnt fördelade element */
 .navigation {
+  background-color: #2c3e50;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  font-size: 1.5rem;
-  font-weight: bold;
+  justify-content: space-around;
   align-items: center;
+  padding: 1rem;
 }
 
 div {
@@ -110,14 +111,14 @@ div {
 }
 
 /* Navigeringslänkar */
-.navigation .nav-item a {
-  color: #000;
-  padding: 10px;
-  margin-right: 1rem;
-  text-decoration: none;
+.nav-item {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.navigation .nav-item.active a {
+.nav-item.active {
   border-bottom: 5px solid #3ca7d12f;
   font-weight: bold;
   pointer-events: none;
@@ -125,10 +126,8 @@ div {
 }
 
 /* Bakgrundsfärg vid hover på navigationslänkar */
-.navigation .nav-item:hover a {
-  background-color: #3ca7d12f;
-  border-bottom: 5px solid #3ca7d12f;
-  border-radius: 1rem;
+.nav-item:hover {
+  background-color: #3498db;
 }
 
 /* Bilderna placeras i en rad, centrerar dem horisontellt och vertikalt och lägger till ett mellanrum mellan bilderna */
@@ -168,7 +167,7 @@ div {
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
   cursor: pointer;
-  background-color: #E9C46A;
+  background-color: #3498db;
   width: 4rem;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -217,7 +216,7 @@ div {
     margin-left: 0;
   }
 
-  .navigation .nav-item.active a {
+  .nav-item.active {
     background-color: #3ca7d12f;
     border-bottom: 0px solid #3ca7d12f;
     font-weight: bold;
@@ -230,14 +229,7 @@ div {
     width: 100%;
   }
 
-  .navigation .nav-item {
-    color: #000;
+  .nav-item {
     margin-bottom: 1.4rem;
-  }
-
-  .navigation .nav-item:hover a {
-    background-color: 0;
-    border-bottom: 0px;
-    border-radius: 0.2rem;
   }
 }
