@@ -81,12 +81,21 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
             <!-- Bilder visas inte, varför? -->
             <div class="image-container">
-                <img src="images/ocean.webp" alt="Ocean view image" tabindex="0" aria-label="Ocean view image, access the news by pressing the images">
-                <img src="images/city.webp" alt="City image" tabindex="0" aria-label="City image, access the news by pressing the images">
-                <img src="images/family.webp" alt="Family image" tabindex="0" aria-label="Family image, access the news by pressing the images">
+                <div class="image-wrapper">
+                    <img src="images/ocean.webp" alt="Ocean view image" tabindex="0" aria-label="Ocean view image, access the news by pressing the images">
+                    <span class="image-click"></span>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/city.webp" alt="City image" tabindex="0" aria-label="City image, access the news by pressing the images">
+                    <span class="image-click"></span>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/family.webp" alt="Family image" tabindex="0" aria-label="Family image, access the news by pressing the images">
+                    <span class="image-click"></span>
+                </div>
             </div>
 
-            <p>Access the news by pressing the images</p>
+            <!-- <p>Access the news by pressing the images</p> -->
         </div>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->

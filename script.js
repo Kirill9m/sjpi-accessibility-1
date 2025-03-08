@@ -13,7 +13,7 @@ elem.addEventListener("click", () => {
     elem.insertAdjacentElement("afterend", infoText);
     setTimeout(() => {
     infoText.remove();
-  }, 1000);
+  }, 2000);
   }
 });
 }
